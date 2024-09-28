@@ -60,13 +60,16 @@
 		<img src="pics/f5tts_overview.png" height="500" width="1000">
 	</p>
 	</body>
+	<!-- <p style="text-align: center;" >
+		<b>Figure 1.</b> An overview of F5-TTS training (left) and inference (right).
+	</p> -->
+	<p>All samples in this demo page are generated with F5-TTS (NFE=32 CFG=2 <i>w/</i> SS) in one time (no cut), with pretrained Vocos as vocoder.</p>
 </div>
 
 
 <div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">
 	<h2 id="zero-shot" style="text-align: center;">Zero-shot Generation</h2>
-	<p>All samples inferenced with F5-TTS (NFE=32 CFG=2 <i>w/</i> SS) in one time (no cut), mel converted to waveform with Vocos.</p>
-	<p>Prompt and text from the demo page of Seed-TTS.</p>
+	<p>Prompt and text from the demo page of <a href="https://bytedancespeech.github.io/seedtts_tech_report/#full-diffusion-samples" target="_blank" rel="noopener noreferrer">Seed-TTS</a>.</p>
 		<div class="table-responsive pt-3">
 			<table class="table table-hover pt-2">
 				<thead>
@@ -108,13 +111,13 @@
 					<tr>
 						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/zero_shot/seedtts_ref_zh_3.wav" autoplay/>Your browser does not support the audio element.</audio></td>
 						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/zero_shot/seedtts_ref_zh_3_gen_zh.wav" autoplay/>Your browser does not support the audio element.</audio><br>皇上的面色未变，宛如雕塑般静止，他的眼中闪过一丝动人的温度。他深深地看了那位忠心耿耿的臣子一眼，终于开口：“诺，我会再考虑考虑的。”他的声音低沉且坚定，留下空气中隐隐的无奈与柔情。</td>
-						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/zero_shot/seedtts_ref_zh_3_gen_en.wav" autoplay/>Your browser does not support the audio element.</audio><br>The emperor's complexion did not change, remaining as still as a sculpture, and a touch of touching warmth flashed in his eyes. He deeply glanced at the loyal minister, and finally spoke: "Well, I will consider it again." His voice was low and firm, leaving a faint hint of helplessness and tenderness in the air."</td>
+						<td style="vertical-align : middle;text-align:center;"><audio controls="controls" style="width: 190px;"><source src="audios/zero_shot/seedtts_ref_zh_3_gen_en.wav" autoplay/>Your browser does not support the audio element.</audio><br>The emperor's complexion did not change, remaining as still as a sculpture, and a touch of touching warmth flashed in his eyes. He deeply glanced at the loyal minister, and finally spoke: "Well, I will consider it again." His voice was low and firm, leaving a faint hint of helplessness and tenderness in the air.</td>
 					</tr>
 				</tbody>
 			</table>
 		</div>
 	<br>
-	<p>Code-Switch, Text from FireRedTTS demo page.</p>
+	<p>Code-Switch, Text from <a href="https://fireredteam.github.io/demos/firered_tts/#cs-samples" target="_blank" rel="noopener noreferrer">FireRedTTS</a> demo page.</p>
 		<div class="table-responsive pt-3">
 			<table class="table table-hover pt-2">
 				<thead>
@@ -152,7 +155,7 @@
 
 <div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">
 	<h2 id="speed-control" style="text-align: center;">Speed Control</h2>
-	<p>Prompt and Text from Seed-TTS, same as those used in MaskGCT demo page.</p>
+	<p>Prompt and Text from Seed-TTS, same as those used in <a href="https://maskgct.github.io/#tempo-samples" target="_blank" rel="noopener noreferrer">MaskGCT</a> demo page.</p>
 	<p>F5-TTS only needs a total duration, the character's position and duration will be automatically assigned by model.</p>
 		<div class="table-responsive pt-3">
 			<table class="table table-hover pt-2">
@@ -200,7 +203,7 @@
 			</table>
 		</div>
 	<br>
-	<p>Prompt and Text from E2 TTS demo page.</p>
+	<p>Prompt and Text from <a href="https://www.microsoft.com/en-us/research/project/e2-tts/#:~:text=Changing%20the%20speech%20rate" target="_blank" rel="noopener noreferrer">E2 TTS</a> demo page.</p>
 		<div class="table-responsive pt-3">
 			<table class="table table-hover pt-2">
 				<thead>
@@ -264,7 +267,7 @@
 
 <div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">
 	<h2 id="emotion" style="text-align: center;">Emotion</h2>
-	<p>Compare with most expressive results in E2 TTS demo page, Prompt from RAVDESS dataset.</p>
+	<p>Compare with most expressive results in <a href="https://www.microsoft.com/en-us/research/project/e2-tts/#:~:text=prompts%20from%20the-,RAVDESS,-dataset.%20Text%20prompt" target="_blank" rel="noopener noreferrer">E2 TTS</a> demo page, Prompt from RAVDESS dataset.</p>
 		<div class="table-responsive pt-3">
 			<table class="table table-hover pt-2">
 				<thead>
@@ -324,7 +327,7 @@
 
 <div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">
 	<h2 id="robustness" style="text-align: center;">Robustness</h2>
-	<p>First prompt (Wukong) from FireRedTTS demo page, Second to Fourth from Bailing-TTS. Text from Seed-TTS hard testset.</p>
+	<p>First prompt (Wukong) from <a href="https://fireredteam.github.io/demos/firered_tts/#speaker-finetune-samples" target="_blank" rel="noopener noreferrer">FireRedTTS</a> demo page, Second to Fourth from <a href="https://giantailab.github.io/bailingtts_tech_report/index.html#mandarin_0_shot" target="_blank" rel="noopener noreferrer">Bailing-TTS</a>. Text from Seed-TTS hard testset same as in <a href="https://maskgct.github.io/#robustness-samples" target="_blank" rel="noopener noreferrer">MaskGCT</a> demo page.</p>
 		<div class="table-responsive pt-3">
 			<table class="table table-hover pt-2">
 				<thead>
@@ -361,7 +364,7 @@
 			</table>
 		</div>
 	<br>
-	<p>Hard sentences from ELLA-V. Same prompts as in E2 TTS demo page from LibriSpeech-PC test-clean.</p>
+	<p>Hard sentences from <a href="https://ereboas.github.io/ELLAV/" target="_blank" rel="noopener noreferrer">ELLA-V</a>. Same audio prompts as in <a href="https://www.microsoft.com/en-us/research/project/e2-tts/#:~:text=E2%20TTS%20can%20generate%20hard%20sentences" target="_blank" rel="noopener noreferrer">E2 TTS</a> demo page from LibriSpeech-PC test-clean.</p>
 		<div class="table-responsive pt-3">
 			<table class="table table-hover pt-2">
 				<thead>
